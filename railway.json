@@ -1,13 +1,8 @@
 {
   "build": {
-    "builder": "dockerfile",
-    "buildpacks": [
-      {
-        "name": "python-3"
-      }
-    ]
+    "builder": "dockerfile"
   },
   "deploy": {
-    "startCommand": "cd backend && python run.py"
+    "startCommand": "python run.py"
   }
 }
