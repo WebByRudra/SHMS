@@ -1,0 +1,13 @@
+{
+  "build": {
+    "builder": "dockerfile",
+    "buildpacks": [
+      {
+        "name": "python-3"
+      }
+    ]
+  },
+  "deploy": {
+    "startCommand": "cd backend && python run.py"
+  }
+}
